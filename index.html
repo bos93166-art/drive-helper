@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Драйв помощник</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="brand">Драйв помощник<small>памятки и жалобы для себя</small></div>
+    <button class="iconbtn" id="themeBtn" aria-label="Сменить тему">◐</button>
+  </header>
+  <div id="view"></div>
+</div>
+<nav class="tabs">
+  <button data-tab="memos" class="on"><span class="ic">☰</span>Памятки</button>
+  <button data-tab="complaint"><span class="ic">✎</span>Жалоба</button>
+  <button data-tab="ref"><span class="ic">ⓘ</span>Справка</button>
+</nav>
+<div class="toast" id="toast"></div>
+<script src="content.js"></script>
+<script src="complaint.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
